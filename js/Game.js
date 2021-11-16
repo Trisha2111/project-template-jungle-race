@@ -112,22 +112,22 @@ class Game {
   handleBush(index) {
     // Write a overlap function  for animal and bush 
        //remove the bush
-    animals[index-1].overlap(bush,function(collector,collected)){
+    animals[index-1].overlap(bush,function(collector,collected){
       player.bush=185
       collected.remove()                       
                              
-                             }  }
-
+                             }  )
+  }
   handleGrass(index) {
     
      
     // Write a overlap function  for animal and grass
        //remove the grass
-    animals[index-1].overlap(grass,function(collector,collected)){
+    animals[index-1].overlap(grass,function(collector,collected){
       player.score+=20
        player.update();                       
       collected.remove()                       
                              
-                             }  }
+                             }  )
   }
 }
